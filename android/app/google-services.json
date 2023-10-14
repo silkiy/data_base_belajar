@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "667901837097",
+    "project_id": "data-base-belajar",
+    "storage_bucket": "data-base-belajar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667901837097:android:a01144e0b83b4731f8c138",
+        "android_client_info": {
+          "package_name": "com.example.data_base_belajar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD97akdxr1huPH35p0G7R-mLzK2OadGBXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
