@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:data_base_belajar/page/login_page.dart';
-import 'package:data_base_belajar/page/register_page.dart';
 import 'package:flutter/material.dart';
+
+import '../../page/auth/login_page.dart';
+import '../../page/auth/register_page.dart';
 
 class AuthPage extends StatefulWidget {
   const AuthPage({super.key});

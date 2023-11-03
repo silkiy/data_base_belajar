@@ -2,7 +2,7 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:data_base_belajar/read%20data/get_user_name.dart';
+import 'package:data_base_belajar/model/get_user_name.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

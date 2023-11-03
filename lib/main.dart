@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:data_base_belajar/firebase_options.dart';
-import 'package:data_base_belajar/auth/main_page.dart';
+import 'package:data_base_belajar/controller/auth/main_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
