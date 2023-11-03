@@ -4,6 +4,8 @@ import 'package:data_base_belajar/page/auth/forget_pw_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sign_button/constants.dart';
+import 'package:sign_button/create_button.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback showRegisterPage;
@@ -190,10 +192,70 @@ class _LoginPageState extends State<LoginPage> {
                     ),
 
                     SizedBox(
-                      height: 25,
+                      height: 50,
                     ),
 
-                    //register now
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 25),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Divider(
+                              thickness: 0.5,
+                              color: Colors.grey[400],
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 10,
+                            ),
+                            child: Text(
+                              "Or continue with",
+                              style: TextStyle(
+                                color: Colors.grey[700],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Divider(
+                              thickness: 0.5,
+                              color: Colors.grey[400],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    SizedBox(
+                      height: 50,
+                    ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SignInButton.mini(
+                          buttonType: ButtonType.googleDark,
+                          onPressed: () {},
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SignInButton.mini(
+                          buttonType: ButtonType.facebookDark,
+                          onPressed: () {},
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SignInButton.mini(
+                          buttonType: ButtonType.appleDark,
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 50,
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -214,7 +276,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
