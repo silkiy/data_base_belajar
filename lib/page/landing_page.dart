@@ -3,7 +3,7 @@
 // import 'dart:html';
 
 import 'package:data_base_belajar/page/profile_page.dart';
-import 'package:data_base_belajar/util/coffe_tile.dart';
+import 'package:data_base_belajar/page/util/coffe_tile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -91,7 +91,7 @@ class _LandingPageState extends State<LandingPage> {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                CoffeTile(),
+                CoffeTile()
               ],
             ),
           ),

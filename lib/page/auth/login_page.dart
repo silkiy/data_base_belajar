@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordcontroller = TextEditingController();
 
   Future signIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
+    FirebaseAuth.instance.signInWithEmailAndPassword(
       email: _emailcontroller.text.trim(),
       password: _passwordcontroller.text.trim(),
     );
@@ -53,9 +53,10 @@ class _LoginPageState extends State<LoginPage> {
                       size: 100,
                       color: Color.fromARGB(255, 53, 35, 23),
                     ),
-                    // SizedBox(
-                    //   height: 45,
-                    // ),
+
+                    SizedBox(
+                      height: 15,
+                    ),
 
                     Text(
                       "Hallo",
