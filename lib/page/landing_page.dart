@@ -76,10 +76,10 @@ class _LandingPageState extends State<LandingPage> {
                 prefixIcon: Icon(Icons.search),
                 hintText: 'Find you coffee...',
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: BorderSide(color: Colors.blue),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blue),
+                  borderSide: BorderSide(color: Colors.black),
                 ),
               ),
             ),

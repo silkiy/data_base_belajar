@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
 
+import 'package:data_base_belajar/controller/auth/auth_google.dart';
 import 'package:data_base_belajar/page/auth/forget_pw_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,8 @@ import 'package:sign_button/create_button.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback showRegisterPage;
-  const LoginPage({super.key, required this.showRegisterPage});
+  final Function()? onPressed;
+  const LoginPage({super.key, required this.showRegisterPage, required this.onPressed,});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -21,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordcontroller = TextEditingController();
 
   Future signIn() async {
-    FirebaseAuth.instance.signInWithEmailAndPassword(
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
       email: _emailcontroller.text.trim(),
       password: _passwordcontroller.text.trim(),
     );
@@ -236,7 +238,7 @@ class _LoginPageState extends State<LoginPage> {
                       children: [
                         SignInButton.mini(
                           buttonType: ButtonType.googleDark,
-                          onPressed: () {},
+                          onPressed: () => AuthGoogle().signInWithGoogle(),
                         ),
                         SizedBox(
                           width: 10,
@@ -277,6 +279,9 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(
+                      height: 50,
                     ),
                   ],
                 ),
